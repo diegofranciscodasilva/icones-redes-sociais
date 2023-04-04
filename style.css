@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redessociais {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redessociaiscontainer {
+    padding: 1rem;
+    min-width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.redessociaisicon {
+    min-height: 100px;
+    min-width: 100px;
+    margin: 1rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.folharedessociais {
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 0;
+    transition: 0.5s;
+    transform: rotateZ(-45deg) skewX(24deg);
+    cursor: pointer;
+}
+
+.redessociaisicon:first-child > .folharedessociais {
+    background-color: #4859a2;
+}
+
+.redessociaisicon:nth-child(2) > .folharedessociais {
+    background-color: #58aeec;
+}
+
+.redessociaisicon:nth-child(3) > .folharedessociais {
+    background-color: #ce3c38;
+}
+
+.redessociaisicon:nth-child(4) > .folharedessociais {
+    background-color: #0e7daf;
+}
+
+.redessociaisicon:nth-child(5) > .folharedessociais {
+    background-image: linear-gradient(to right, #fed975 , #fa7f1e, #d72976, #9630be, #4f5cd5);
+}
+
+.redessociaisicon .folharedessociaisopaca:first-child {
+    opacity: 0.8;
+}
+
+.redessociaisicon .folharedessociaisopaca:nth-child(2) {
+    opacity: 0.2;
+}
+
+.redessociaisicon .folharedessociaisopaca:nth-child(3) {
+    opacity: 0.6;
+}
+
+.redessociaisicon .folharedessociaisopaca:nth-child(4) {
+    opacity: 0.8;
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.redessociaisicon:hover > .folharedessociais {
+    bottom: 28px;
+}
+
+.redessociaisicon:hover .folharedessociaisopaca:first-child {
+    bottom: 22px;
+}
+
+.redessociaisicon:hover .folharedessociaisopaca:nth-child(2) {
+    bottom: 20px;
+}
+
+.redessociaisicon:hover .folharedessociaisopaca:nth-child(3) {
+    bottom: 15px;
+}
+
+.redessociaisicon:hover .folharedessociaisopaca:nth-child(4) {
+    bottom: 8px;
+}
